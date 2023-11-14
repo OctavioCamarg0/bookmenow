@@ -1,0 +1,394 @@
+:root {
+    --primaria: #3e4095;
+    --secundaria: #00afef;
+    --laranja: #f58634;
+    --texto: #4b4b4d;
+    --label-categoria: #d9c505;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+}
+
+#cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 65px;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#menu ul {
+    display: flex;
+    list-style: none;
+}
+
+#menu ul li {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#menu a {
+    color: var(--texto);
+    font-weight: 500;
+}
+
+#botao-menu-mobile{
+    display: none;
+    /* Desaparecer Elemento da tela */
+}
+
+.btn-secundario {
+    background-color: var(--secundaria);
+    padding: 5px 15px 5px 15px;
+    border-radius: 5px;
+    color: white;
+}
+
+#banner {
+    background-image: url(../img/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+}
+
+#banner p {
+    margin: 10px;
+}
+
+.lista-serviços-banner ul li {
+    display: inline-block;
+    margin: 10px;
+    font-size: 0.8em;
+    border: 1px dotted #ffffff;
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
+#form-pesquisa{
+    background-color: white;
+    color: var(--texto);
+    font-size: 1.5em;
+    border-radius: 30px;
+}
+
+#form-pesquisa form{
+    display: flex;
+    align-items: center;
+    padding: 5px
+}
+
+#form-pesquisa form input{
+    height: 40px;
+    font-size: 1rem;
+    border: none;
+}
+
+#form-pesquisa form i{
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+#form-pesquisa button {
+    background-color: var(--primaria);
+    font-size: 1.2rem;
+    height: 40px;
+    border: none;
+    width: 150px;
+    border-radius: 20px;
+    color: #ffffff;
+}
+
+.secao-titulo {
+    border-left: 5px solid var(--primaria);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.titulo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.titulo a {
+    color: var(--texto);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 555;
+}
+
+.lista-card-categorias {
+    display: flex;
+    gap: 20px;
+}
+
+.lista-card-categorias img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.lista-card-categorias div{
+    position: relative;
+}
+
+.lista-card-categorias .item span{
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background-color: var(--laranja);
+    color: white;
+    padding: 0px 20px;
+    font-size: 12px;
+    border-radius: 15px;
+}
+
+.lista-card-servicos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.lista-card-servicos img{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    filter: brightness(70%);
+    -webkit-filter: brightness(70%);
+}
+
+.card-servicos{
+    flex-grow: 1;
+    width: calc((100% / 3) - 30px);
+}
+
+.card-foto{
+    position: relative;
+}
+
+.card-foto-legenda{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content:space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+.card-foto-preco{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.card-foto-categoria{
+    background-color: var(--label-categoria);
+    border-radius: 15px;
+    padding: 5px;
+    padding-right: 5px;
+    text-align: center;
+}
+
+.card-descricao-legenda{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+#rodape{
+    margin-top: 50px;
+    border-top: 2px solid #ccc;
+    padding: 30px;
+}
+
+#linha-rodape{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.coluna-rodape{
+    width: 25%;
+}
+
+.coluna-rodape a{
+    color: var(--texto);
+    margin-top: 5px;
+    display: block;
+}
+
+.coluna-rodape a:hover{
+    color: var(--primaria);
+    font-weight: bold;
+}
+
+.coluna-rodape ul{
+    list-style: none;
+}
+
+.card-avaliacao{
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.card-titulo{
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+
+.coluna-rodape i{
+    color: var(--primaria);
+}
+
+.redes-sociais{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.redes-sociais a{
+    background-color: #ededed;
+    font-size: 24px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.copyright{
+    background-color: #ccc;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 30px;
+}
+
+.icone-aplicativo a{
+    display: inline-block;
+}
+/* Estilo Mobile */
+
+@media (max-width: 767px) {
+
+    #cabecalho {
+        position: fixed;
+        z-index: 9999999;
+        background-color: white;
+        width: 100%;
+    }
+
+    #logotipo img {
+        height: 40px;
+    }
+
+    #banner {
+        min-height: 350px;
+        padding-top: 70px;
+    }
+
+    #botao-menu-mobile {
+        display: block; 
+        /* Mostrar elemento na tela */
+        padding: 10px;
+        cursor: pointer;
+        font-size: 18px;
+    }
+
+    #menu {
+        position: absolute;
+        background-color: white;
+        width: 250px;
+        left: -255px;
+        height: 100vh;
+        top: 65px;
+        z-index: 99999;
+        box-shadow: 2px 5px 10px #2f2f2f;
+        transition: left 0.5s;
+    }
+
+    #menu.menu-ativo {
+        left: 0;
+    }
+
+    #menu ul {
+        margin-top: 30px;    
+        display: block;
+    }
+
+    #menu li {
+        padding: 10px;
+    }
+
+    #form-pesquisa {
+        margin-left: 15px;
+        margin-right: 15px;
+        border-radius: 10px;
+    }
+
+    #form-pesquisa form {
+        flex-direction: column;
+    }
+
+    #form-pesquisa input {
+        width: 80%;
+        flex-grow: 1;
+    }
+
+    .form-icon {
+        width: 100%;
+        display: flex;
+    }
+
+    .lista-serviços-banner {
+        display: none;
+    }
+
+    #banner h2 {
+        font-size: 25px;
+    }
+
+    #banner p {
+        font-size: 15px;
+    }
+
+    .card-servicos {
+        flex-grow: 1;
+        width: calc((100% / 2) - 30px);
+    }
+
+    .coluna-rodape {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        width: 50%;
+    }
+
+    .icone-aplicativo {
+        padding: 20px;
+    }
+
+}
